@@ -1,0 +1,5 @@
+columns :5
+col pos for CPU  :3
+rows :4
+product : Chrome CPU : 2.8%
+product : System CPU : 1.8%
