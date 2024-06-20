@@ -1,0 +1,4 @@
+"Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
+"failed","Thu Jun 20 21:27:37 GMT 2024","Thu Jun 20 21:27:37 GMT 2024","62","firefox","Assertion.spec.js","","","","Assertion",""
+"failed","Thu Jun 20 21:27:36 GMT 2024","Thu Jun 20 21:27:36 GMT 2024","106","chromium","Assertion.spec.js","","","","Assertion",""
+"failed","Thu Jun 20 21:27:39 GMT 2024","Thu Jun 20 21:27:39 GMT 2024","104","webkit","Assertion.spec.js","","","","Assertion",""
