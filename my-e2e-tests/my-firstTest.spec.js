@@ -164,7 +164,7 @@ async function getPrice(rows,page,productName,colPos){
   console.log( 'product : '+productName+' CPU : '+val)
 }
 
-test.only('drop down',async({page})=>{
+test('drop down',async({page})=>{
 
  await page.goto('https://testautomationpractice.blogspot.com/')
  await page.selectOption('#country','Germany')
