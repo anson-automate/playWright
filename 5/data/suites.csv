@@ -1,0 +1,4 @@
+"Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
+"passed","Thu Jun 20 21:06:02 GMT 2024","Thu Jun 20 21:06:04 GMT 2024","2169","firefox","Assertion.spec.js","","","","Assertion",""
+"passed","Thu Jun 20 21:06:06 GMT 2024","Thu Jun 20 21:06:13 GMT 2024","6259","webkit","Assertion.spec.js","","","","Assertion",""
+"passed","Thu Jun 20 21:06:01 GMT 2024","Thu Jun 20 21:06:02 GMT 2024","909","chromium","Assertion.spec.js","","","","Assertion",""
