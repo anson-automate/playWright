@@ -1,0 +1,16 @@
+{
+    "userName":"TestUser",
+    "userEmail":"abc@yahoo.com",
+    "userPhone" : "888999000",
+    "userGender":"Female",
+    "userDays": ["tuesday","monday"],
+    "userCountry":"India",
+    "userColor": "Yellow",
+    "userSlider": "60%",
+    "userBook": {
+        "BookName": "Learn JS",
+        "Column": 1
+    },
+    "userProducts":["Product 1","Product 2","Product 6","Product 16"]
+
+}
