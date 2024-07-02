@@ -1,17 +1,20 @@
-import {test,expect} from '@playwright/test'
-import { LoginPageSL } from '../pages/loginPage'
-import { LogOut } from '../pages/logOut'
+import {test as base,expect} from '@playwright/test'
+import { ActionsPage } from '../pages/ActionsPage';
+import { DropDown } from '../pages/DropDown';
+import { WebTableDate } from '../pages/WebTableDate';
 
 
-exports.test = test.extend({
-
-    LoginPage : async ({page},use)=>{
-        await use(new LoginPageSL(page))
+export const test = base.extend({
+    ActionsPage : async({page},use)=>{
+        await use(new ActionsPage (page))
     },
-    LogOutPg : async({page},use)=>{
-        await use(new LogOut(page))
+    DropDown : async({page},use)=>{
+        await use(new DropDown(page))
+    },
+    WebTableDate: async({page},use)=>{
+        await use(new WebTableDate(page))
     }
 
-})
+});
 
-exports.expect = expect
+export {expect} ;
