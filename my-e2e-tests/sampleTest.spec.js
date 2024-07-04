@@ -1,4 +1,3 @@
-import { PassThrough } from 'stream'
 import {test,expect} from './SetUp/SetUp'
 import myTestData from './TestData/Data.json'
 test.beforeEach(async({page})=>{
@@ -47,55 +46,27 @@ test('Web table and dates', async({WebTableDate})=>{
 
 })
 
-test("New window Alert pop up",async({page,context})=>{
-/*
-await page.locator(".widget-content button[onclick='myFunction()']").click()
-const newPage = await context.waitForEvent('page')
-
-expect(newPage.locator('#logo')).toBeVisible()
-
-await newPage.locator('#search input').fill('iPhone 13')
-
-await newPage.close()
-
-const thirdPage = await context.newPage()
-thirdPage.goto('https://www.canadapost-postescanada.ca/')
-
-thirdPage.locator('#primaryLangSelector').click()
-
-thirdPage.locator("span[data-text='Sign in']").click()
-
-//const popupModal = await context.waitForEvent('popup')
-
-await thirdPage.locator('#usernameLarge').fill(myTestData.userEmail)
-
-await thirdPage.close()
-*/
-
-// doulbe click
-await page.locator("[ondblclick='myFunction1()']").dblclick()
-
-page.on('dialog',async (alert) => {
-    console.log(await alert.message())
-    alert.accept('Aviv')
+test('Confirmation alert @prompt',async({WindowAlertFrame})=>{
+    // confirm js alert 
+    await WindowAlertFrame.confirm()
 })
 
+test(' Alert @prompt',async({WindowAlertFrame})=>{
+    //  js alert 
+    await WindowAlertFrame.alertmodal()
+})
 
-//a//wait page.waitForSelector("button[onClick='myFunctionAlert()']")
+test("New window Alert pop up frame @prompt",async({WindowAlertFrame})=>{
 
-//await page.click(".widget-content button[onClick='myFunctionAlert()']")
+    // Opena a new window
+    await WindowAlertFrame.newWindow(myTestData.userSearch)
+    // open a new window and a popup
+    await WindowAlertFrame.newWindowPopup(myTestData.userEmail)
 
-// await page.click(".widget-content button[onClick='myFunctionConfirm()']")
+    // prompt to accept an input
+    await WindowAlertFrame.prompt(myTestData.userName)
 
-
-
-
-await page.click(".widget-content button[onClick='myFunctionPrompt()']")
-console.log(await page.locator("#demo").textContent())
-await expect(await page.locator("#demo").textContent()).toContain("Aviv")
-await page.frameLocator('#frame-one796456169').locator('#RESULT_TextField-0').fill('Aviv')
-
-await page.waitForTimeout(6000)
+    await WindowAlertFrame.frameDbClick(myTestData.userEmail)
 
 })
 

@@ -11,6 +11,7 @@
         "BookName": "Learn JS",
         "Column": 1
     },
-    "userProducts":["Product 1","Product 2","Product 6","Product 16"]
+    "userProducts":["Product 1","Product 2","Product 6","Product 16"],
+    "userSearch":"iPhone 13"
 
 }
