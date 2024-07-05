@@ -33,9 +33,9 @@ export const WindowAlertFrame = class WindowAlertFrame {
     async newWindowPopup(email){
 
     const thirdPage = await this.context.newPage()
-    thirdPage.goto('https://www.canadapost-postescanada.ca/')
-    thirdPage.locator(this.lanSel).click()
-    thirdPage.locator(this.loginBtn ).click()
+    await thirdPage.goto('https://www.canadapost-postescanada.ca/')
+    await thirdPage.locator(this.lanSel).click()
+    await thirdPage.locator(this.loginBtn ).click()
     await thirdPage.locator(this.userTxbx).fill(email)
     await thirdPage.close()
     }
