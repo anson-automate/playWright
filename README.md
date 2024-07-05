@@ -27,3 +27,4 @@ Automated build when a code merge to main branch by  GitHub Actions
 
 [Allure Report]: <https://www.npmjs.com/package/allure-playwright>
 [here!]: <https://anson-automate.github.io/playWright/>
+[Custom Fixtures]: <https://playwright.dev/docs/test-fixtures#creating-a-fixture>
