@@ -70,6 +70,14 @@ test("New window Alert pop up frame @prompt",async({WindowAlertFrame})=>{
 
 })
 
+// using the storage state
+test.use({storageState: 'my-e2e-tests/Authorization/auth.json'})
+test("Storage state ",async({page})=>{
+    await page.goto('https://demoblaze.com/index.html')
+    await expect(page.locator('a[id="nameofuser"]')).toContainText('test')
+
+})
+
 
 
 
