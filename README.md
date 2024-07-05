@@ -14,6 +14,7 @@
 -  Handling Alert,Confirm and Prompt
 -  Handling Pop up
 -  Handling Frames
+-  Storage State (Skip login)
 
 ## Test data
 - JSON file
